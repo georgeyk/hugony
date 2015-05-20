@@ -1,0 +1,13 @@
+name = "Harmony Adapted"
+license = "MIT"
+description = "Adapted theme from Harmony (jekyll) theme"
+
+[author]
+  name = "George Y. Kussumoto"
+  homepage = "http://georgeyk.com.br"
+
+# Not exactly a port, but modified from:
+[original]
+  name = "harmony"
+  homepage = "http://gayan.me/harmony/"
+  repo = "https://github.com/gayanvirajith/harmony"

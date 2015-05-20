@@ -1,0 +1,44 @@
+<ul class="social-media">
+    {{ if .Site.Params.Twitter }}
+    <li>
+        <a title="{{ .Site.Params.Twitter }} on Twitter"
+            href="https://twitter.com/{{ .Site.Params.Twitter }}"
+            class="twitter wc-img-replace" target="_blank">Twitter</a>
+    </li>
+    {{ end }}
+    {{ if .Site.Params.Github }}
+    <li>
+        <a title="{{ .Site.Params.Github }} on Github"
+            href="https://github.com/{{ .Site.Params.Github }}"
+            class="github wc-img-replace" target="_blank">Github</a>
+    </li>
+    {{ end }}
+    {{ if .Site.Params.Facebook }}
+    <li>
+        <a title="{{ .Site.Params.Facebook }} on Facebook"
+            href="https://facebook.com/{{ .Site.Params.Facebook }}"
+            class="facebook wc-img-replace" target="_blank">Facebook</a>
+    </li>
+    {{ end }}
+    {{ if .Site.Params.Gplus }}
+    <li>
+        <a title="{{ .Site.Params.Gplus }} on Google Plus"
+            href="https://plus.google.com/{{ .Site.Params.Gplus }}"
+            class="google wc-img-replace" target="_blank">Google</a>
+    </li>
+    {{ end }}
+    {{ if .Site.Params.Dribble }}
+    <li>
+        <a title="{{ .Site.Params.Dribble }} on Dribble"
+            href="https://dribbble.com/{{ .Site.Params.Dribble }}"
+            class="dribble wc-img-replace" target="_blank">Dribble</a>
+    </li>
+    {{ end }}
+    {{ if .Site.Params.Pinterest }}
+    <li>
+        <a title="{{ .Site.Params.Pinterest }} on Pinterest"
+            href="https://www.pinterest.com/{{ .Site.Params.Pinterest }}"
+            class="pinterest wc-img-replace" target="_blank">Pinterest</a>
+    </li>
+    {{ end }}
+</ul>

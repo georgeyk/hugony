@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<div class="page-content wc-container">
+  <h1>{{ .Title }}</h1>
+  {{ $data := .Data }}
+  {{ range $key, $value := .Data.Terms }}
+    <h4><a href="{{ $key | urlize }}">{{ $key }}</a></h4>
+    <ul class="posts">
+    {{ range .Pages }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+  {{ end }}
+</div>
+{{ partial "main-footer.html" . }}

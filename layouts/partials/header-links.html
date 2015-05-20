@@ -1,0 +1,7 @@
+<ul>
+  {{ $base_url := .Site.BaseUrl }}
+  <li><a href=" {{ $base_url }}">Home</a><span>/</span></li>
+  {{ range $section, $notsure := .Site.Sections }}
+  <li><a href="{{ $base_url }}{{ $section }}">{{ $section }}</a><span>/</span></li>
+  {{ end }}
+</ul>

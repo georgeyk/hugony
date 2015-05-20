@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+<div class="page-content wc-container">
+	<div class="post">
+		<h1>{{ .Title }}</h1>
+		<p class="post-meta">
+    <span class="categories">
+      {{ delimit .Params.categories ", "}}
+      </span> |
+      <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006"}}
+	    </span>
+		</p>
+		<div class="post">
+      {{ .Content }}
+		</div>
+	</div>
+
+	<div class="post-footer">
+		<div class="column-1">
+      {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink }}"><< Older</a>
+      {{ else }}
+				<span><< Older</span>
+      {{ end}}
+		</div>
+    <div class="column-2"><a href="{{ .Site.BaseUrl}}">Home</a></div>
+		<div class="column-3">
+      {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}">Newer >></a>
+      {{ else }}
+				<span>Newer >></span>
+      {{ end }}
+		</div>
+	</div>
+</div>
+{{ partial "main-footer.html" . }}
